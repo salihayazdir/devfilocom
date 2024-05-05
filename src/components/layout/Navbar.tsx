@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { menuITems } from "@/lib/navMenuItems";
+import { menuItems } from "@/lib/navMenuItems";
 import DesktopNavMenuItem from "./DesktopNavMenuItem";
 
 type Props = {};
@@ -11,7 +11,7 @@ export default function Navbar({}: Props) {
       <div>DEVFILO</div>
       <nav className="flex gap-8 items-center">
         <ul className="flex gap-6 text-gri_text tems-center">
-          {menuITems.map((item) => (
+          {menuItems.map((item) => (
             <DesktopNavMenuItem key={item.href} menuItem={item} />
           ))}
         </ul>

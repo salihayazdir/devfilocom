@@ -4,7 +4,7 @@ export type NavMenuItem = {
   subItems?: NavMenuItem[];
 };
 
-export const menuITems: NavMenuItem[] = [
+export const menuItems: NavMenuItem[] = [
   { name: `Anasayfa`, href: `/` },
   {
     name: `Lojistik Ekosistemi`,
